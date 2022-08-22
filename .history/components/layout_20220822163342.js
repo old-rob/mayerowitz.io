@@ -1,0 +1,52 @@
+/**
+ * Layout component that queries for data
+ * with Gatsby's useStaticQuery component
+ *
+ * See: https://www.gatsbyjs.org/docs/use-static-query/
+ */
+
+import React from "react"
+import PropTypes from "prop-types"
+import styled from "styled-components"
+
+import { rhythm } from "../src/utils/typography"
+import Header from "./header"
+
+import Site from "../data/site"
+
+const Page = styled.div`
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+`
+
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+  flex: 1 0 auto;
+`
+
+const Footer = styled.footer`
+  text-align: center;
+  flex-shrink: 0;
+  padding: ${rhythm(1)};
+`
+
+const Layout = ({ children }) => (
+    <Page>
+      <Header
+        siteTitle={Site.title}
+        menuLinks={Site.menuLinks}
+      />
+      <Container>
+        <main style={{ flexGrow: 1 }}>{children}</main>
+      </Container>
+      <Footer>
+        © {new Date().getFullYear()}
+        {` `}Antoine Mayerowitz
+      </Footer>
+    </Page>
+)
+
+export default Layout

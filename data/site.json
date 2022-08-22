@@ -1,0 +1,36 @@
+{
+    "title": "Antoine Mayerowitz",
+    "description": "My personal site",
+    "author": "Antoine Mayerowitz a.mayerowitz@gmail.com",
+    "social": {
+      "twitter": "AntoineMyrwtz"
+    },
+    "externalLinks": {
+      "github": "https://github.com/SuperMayo",
+      "linkedin": "https://www.linkedin.com/in/antoinemayerowitz/",
+      "twitter": "https://twitter.com/AntoineMyrwtz",
+      "instagram": "https://www.instagram.com/super_mayo/"
+    },
+    "menuLinks": [
+      {
+        "name": "Home",
+        "link": "/"
+      },
+      {
+        "name": "Research",
+        "link": "/research"
+      },
+      {
+        "name": "Teaching",
+        "link": "/teaching"
+      },
+      {
+        "name": "Projects",
+        "link": "/projects"
+      },
+      {
+        "name": "Gallery",
+        "link": "/gallery"
+      }
+    ]
+}
